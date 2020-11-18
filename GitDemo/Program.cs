@@ -7,18 +7,19 @@ namespace GitDemo
     {
         static void Main(string[] args)
         {
-
+            /*
             int[] ArrayOfNumbers = new int[5];
             ArrayOfNumbers[0] = 13;
-            ArrayOfNumbers[1]= 22;
+            ArrayOfNumbers[1] = 22;
             ArrayOfNumbers[2] = 3;
             ArrayOfNumbers[3] = 93;
             ArrayOfNumbers[4] = 1;
 
-            
+
             Console.WriteLine("Cehck if you picked a luckynumber ");
             string nr = Console.ReadLine();
             int myNr = Convert.ToInt32(nr);
+            */
             /*
             for (int i = 0; i< ArrayOfNumbers.Length; i++)
             {
@@ -33,7 +34,21 @@ namespace GitDemo
                 }
             }
             */
-            Console.WriteLine(ArrayOfNumbers.Contains(myNr));
+            // Console.WriteLine(ArrayOfNumbers.Contains(myNr));
+
+            //övning 2
+            //Ett sätt
+            int[] firstOne = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] secondOne = new int[10] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+            //Console.WriteLine(string.Join(',',firstOne));
+            //Console.WriteLine(string.Join(',',secondOne));
+
+            //Ett annat sätt
+            Console.WriteLine(string.Join(',',firstOne));
+            Console.WriteLine(string.Join(',',firstOne.Reverse()));
+
+
 
 
         }
